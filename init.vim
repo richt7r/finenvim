@@ -1,4 +1,5 @@
 call plug#begin('~/.config/nvim/autoload')
+
 	Plug 'nvim-telescope/telescope.nvim'
 	Plug 'nvim-lua/plenary.nvim'
 	Plug 'rebelot/kanagawa.nvim'
@@ -38,7 +39,9 @@ let g:markdown_fenced_languages = [
 
 lua require('tailbiter/telescope')
 
-lua require('goto-preview').setup {}
+lua require('tailbiter/goto-preview') 
+
+lua require('tailbiter/Comment')
 
 lua require('kanagawa').setup {theme = "wave"}
 
