@@ -16,9 +16,9 @@ map("n", '<A-Up>','ddkP')
 
 map("n", '<A-Down>','ddp')
 
--- map("n", '<gtd>', ':lua require('goto-preview').goto_preview_definition()<CR>')
---
--- map("n", '<gti>', ':lua require('goto-preview').goto_preview_implementation()<CR>')
+map("n", '<C-d>', ':lua vim.lsp.buf.declaration()<CR>')
+
+-- back to buffer from which lua vim.lsp.buf.declaration() was called - Control-o
 
 map("i", '<C-s>', '<esc>:w<cr>')
 
