@@ -22,7 +22,9 @@ call plug#begin('~/.config/nvim/autoload')
 	Plug 'duane9/nvim-rg'
 	Plug 'AckslD/muren.nvim'
 	Plug 'rmagatti/logger.nvim'
-	
+	Plug 'mfussenegger/nvim-dap'
+	Plug 'mfussenegger/nvim-dap-python'
+
 call plug#end()
 
 let g:rg_command = 'rg -U'
@@ -51,6 +53,8 @@ lua require('gitsigns').setup()
 lua require('logger')
 
 lua require('tailbiter/lsp_config')
+
+lua require('dap-python').setup('~/anaconda3/bin/python')
 
 lua require('tailbiter/cmp')
 
