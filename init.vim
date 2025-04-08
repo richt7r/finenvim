@@ -21,7 +21,8 @@ call plug#begin('~/.config/nvim/autoload')
 	Plug 'nvim-pack/nvim-spectre'
 	Plug 'duane9/nvim-rg'
 	Plug 'AckslD/muren.nvim'
-
+	Plug 'rmagatti/logger.nvim'
+	
 call plug#end()
 
 let g:rg_command = 'rg -U'
@@ -46,6 +47,8 @@ lua require('tailbiter/Comment')
 lua require('kanagawa').setup {theme = "wave"}
 
 lua require('gitsigns').setup()
+
+lua require('logger')
 
 lua require('tailbiter/lsp_config')
 
