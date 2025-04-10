@@ -24,6 +24,10 @@ map("n", '<C-p>', ":lua require('goto-preview').goto_preview_definition()<CR>")
 
 -- back to buffer from which lua require('goto-preview').goto_preview_definition() was called - :q
 
+map("n", '<C-e>','<ScrollWheelUp>')
+
+map("n", '<C-c>','<ScrollWheelDown>')
+
 map("i", '<C-s>', '<esc>:w<cr>')
 
 map("i", '<C-y>', '<esc>:tabnew ')

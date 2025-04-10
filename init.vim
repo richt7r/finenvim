@@ -24,6 +24,7 @@ call plug#begin('~/.config/nvim/autoload')
 	Plug 'rmagatti/logger.nvim'
 	Plug 'mfussenegger/nvim-dap'
 	Plug 'mfussenegger/nvim-dap-python'
+	Plug 'tomasky/bookmarks.nvim'
 
 call plug#end()
 
@@ -32,6 +33,8 @@ let g:rg_command = 'rg -U'
 colorscheme kanagawa
 
 set number
+
+set mousescroll=ver:1
 
 set clipboard=unnamedplus
 
@@ -45,6 +48,8 @@ lua require('tailbiter/telescope')
 lua require('tailbiter/goto-preview') 
 
 lua require('tailbiter/Comment')
+
+lua require('tailbiter/bookmarks')
 
 lua require('kanagawa').setup {theme = "wave"}
 
