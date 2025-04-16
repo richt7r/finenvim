@@ -3,15 +3,11 @@ call plug#begin('~/.config/nvim/autoload')
 	Plug 'nvim-telescope/telescope.nvim'
 	Plug 'nvim-lua/plenary.nvim'
 	Plug 'rebelot/kanagawa.nvim'
-	Plug 'nvim-telescope/telescope.nvim'
 	Plug 'numToStr/Comment.nvim'
-	Plug 'LuaLS/lua-language-server'
 	Plug 'rmagatti/goto-preview'
-	Plug 'iamcco/vim-language-server'
 	Plug 'preservim/nerdtree'
 	Plug 'lewis6991/gitsigns.nvim'
 	Plug 'neovim/nvim-lspconfig'
-	Plug 'microsoft/pyright'
 	Plug 'hrsh7th/cmp-nvim-lsp'
 	Plug 'hrsh7th/cmp-buffer'
 	Plug 'hrsh7th/cmp-path'
@@ -19,18 +15,15 @@ call plug#begin('~/.config/nvim/autoload')
 	Plug 'hrsh7th/nvim-cmp'
 	Plug 'hrsh7th/vim-vsnip'
 	Plug 'nvim-pack/nvim-spectre'
-	Plug 'duane9/nvim-rg'
 	Plug 'AckslD/muren.nvim'
 	Plug 'rmagatti/logger.nvim'
-	Plug 'mfussenegger/nvim-dap'
-	Plug 'mfussenegger/nvim-dap-python'
 	Plug 'tomasky/bookmarks.nvim'
+	Plug 'bluz71/vim-moonfly-colors'
+	Plug 'AlexvZyl/nordic.nvim'
 
 call plug#end()
 
-let g:rg_command = 'rg -U'
-
-colorscheme kanagawa
+colorscheme moonfly
 
 set number
 
@@ -43,7 +36,7 @@ let g:markdown_fenced_languages = [
       \ 'help'
       \]
 
-lua require('tailbiter/telescope')
+lua require('gitsigns').setup()
 
 lua require('tailbiter/goto-preview') 
 
@@ -51,15 +44,7 @@ lua require('tailbiter/Comment')
 
 lua require('tailbiter/bookmarks')
 
-lua require('kanagawa').setup {theme = "wave"}
-
-lua require('gitsigns').setup()
-
-lua require('logger')
-
 lua require('tailbiter/lsp_config')
-
-lua require('dap-python').setup('~/anaconda3/bin/python')
 
 lua require('tailbiter/cmp')
 

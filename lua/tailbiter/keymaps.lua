@@ -28,6 +28,8 @@ map("n", '<C-e>','<ScrollWheelUp>')
 
 map("n", '<C-c>','<ScrollWheelDown>')
 
+map("n", '<C-n>', ':NERDTreeFocus<CR>')
+
 map("i", '<C-s>', '<esc>:w<cr>')
 
 map("i", '<C-y>', '<esc>:tabnew ')

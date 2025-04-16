@@ -13,4 +13,3 @@ require'lspconfig'.pyright.setup{
 	},
 }
 require'lspconfig'.clangd.setup{}
-require'lspconfig'.matlab_ls.setup{}
