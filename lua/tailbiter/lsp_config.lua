@@ -14,7 +14,18 @@ require'lspconfig'.pyright.setup{
 }
 require'lspconfig'.clangd.setup{}
 require'lspconfig'.fortls.setup{
-	cmd = { "fortls", "--notify_init", "--hover_signature", "--hover_language=fortran", "--use_signature_help" },
+	on_attach = on_attach,
+    	capabilities = capabilities,
 	filetypes = { "fortran" },
+	settings = {},
+	cmd = {
+        'fortls',
+	'--notify_init',
+        '--lowercase_intrinsics',
+        '--hover_signature',
+        '--hover_language=fortran',
+        '--use_signature_help',
+	'--enable_code_actions'},
+	root_markers = { ".fortls", ".git" },
 }
 
