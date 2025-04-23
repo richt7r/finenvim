@@ -20,6 +20,7 @@ call plug#begin('~/.config/nvim/autoload')
 	Plug 'tomasky/bookmarks.nvim'
 	Plug 'bluz71/vim-moonfly-colors'
 	Plug 'AlexvZyl/nordic.nvim'
+	Plug 'stevearc/aerial.nvim'
 
 call plug#end()
 
@@ -35,6 +36,8 @@ let g:markdown_fenced_languages = [
       \ 'vim',
       \ 'help'
       \]
+
+lua require("aerial").setup({})
 
 lua require('gitsigns').setup()
 

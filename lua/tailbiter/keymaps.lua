@@ -30,6 +30,8 @@ map("n", '<C-c>','<ScrollWheelDown>')
 
 map("n", '<C-n>', ':NERDTreeFocus<CR>')
 
+map("n", '<C-k>', ':AerialOpen<CR>')
+
 map("i", '<C-s>', '<esc>:w<cr>')
 
 map("i", '<C-y>', '<esc>:tabnew ')
