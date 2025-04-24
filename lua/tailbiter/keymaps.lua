@@ -32,6 +32,18 @@ map("n", '<C-n>', ':NERDTreeFocus<CR>')
 
 map("n", '<C-k>', ':AerialOpen<CR>')
 
+map("n", '<C-t>', ':FloatermToggle<CR>')
+
+map("t", '<C-t>', '<C-\\><C-n>:FloatermToggle<CR>')
+
+map("t", '<C-h>', '<C-\\><C-n>:FloatermNew<CR>')
+
+map("t", '<C-Right>', '<C-\\><C-n>:FloatermNext<CR>')
+
+map("t", '<C-Left>', '<C-\\><C-n>:FloatermPrev<CR>')
+
+map("t", '<C-x>', '<C-\\><C-n>:FloatermKill<CR>:FloatermToggle<CR>')
+
 map("i", '<C-s>', '<esc>:w<cr>')
 
 map("i", '<C-y>', '<esc>:tabnew ')

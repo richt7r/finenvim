@@ -21,6 +21,7 @@ call plug#begin('~/.config/nvim/autoload')
 	Plug 'bluz71/vim-moonfly-colors'
 	Plug 'AlexvZyl/nordic.nvim'
 	Plug 'stevearc/aerial.nvim'
+	Plug 'voldikss/vim-floaterm'
 
 call plug#end()
 
