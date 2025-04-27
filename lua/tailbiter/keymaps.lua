@@ -44,6 +44,8 @@ map("t", '<C-Left>', '<C-\\><C-n>:FloatermPrev<CR>')
 
 map("t", '<C-x>', '<C-\\><C-n>:FloatermKill<CR>:FloatermToggle<CR>')
 
+map("t", '<C-]>', '<C-\\><C-n>')
+
 map("i", '<C-s>', '<esc>:w<cr>')
 
 map("i", '<C-y>', '<esc>:tabnew ')
