@@ -10,6 +10,8 @@ map("n", '<C-Left>', 'gT')
 
 map("n", '<C-Right>', 'gt')
 
+map("n", 'w', '<C-w>')
+
 map("n", '<C-l>','V')
 
 map("n", '<A-Up>','ddkP')
