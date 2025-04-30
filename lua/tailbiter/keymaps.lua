@@ -16,6 +16,8 @@ map("n", '<A-Up>','ddkP')
 
 map("n", '<A-Down>','ddp')
 
+map("n", '<C-m>',':MaximizerToggle<CR>')
+
 map("n", '<C-d>', ':tab split | lua vim.lsp.buf.declaration()<CR>')
 
 -- back to buffer from which lua vim.lsp.buf.declaration() was called - Control-o

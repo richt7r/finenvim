@@ -22,6 +22,7 @@ call plug#begin('~/.config/nvim/autoload')
 	Plug 'AlexvZyl/nordic.nvim'
 	Plug 'stevearc/aerial.nvim'
 	Plug 'voldikss/vim-floaterm'
+	Plug 'szw/vim-maximizer'
 
 call plug#end()
 
