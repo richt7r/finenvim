@@ -4,8 +4,6 @@ map("n", '<C-s>', ':w<cr>')
 
 map("n", '<C-q>', '<esc>:q<cr>')
 
-map("n", '<C-y>', ':tabnew ')
-
 map("n", '<C-Left>', 'gT')
 
 map("n", '<C-Right>', 'gt')
@@ -26,9 +24,11 @@ map("n", '<C-p>', ":lua require('goto-preview').goto_preview_definition()<CR>")
 
 -- back to buffer from which lua require('goto-preview').goto_preview_definition() was called - :q
 
-map("n", '<C-e>','<ScrollWheelUp>')
+map("n", '<C-c>', '<C-e>')
 
-map("n", '<C-c>','<ScrollWheelDown>')
+map("n", '<C-e>', '<C-y>')
+
+map("n", '<C-y>', ':tabnew ')
 
 map("n", '<C-n>', ':NERDTreeFocus<CR>')
 
