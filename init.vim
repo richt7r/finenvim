@@ -34,12 +34,14 @@ set mousescroll=ver:1
 
 set clipboard=unnamedplus
 
+set nowrap
+
 let g:markdown_fenced_languages = [
       \ 'vim',
       \ 'help'
       \]
 
-lua require("aerial").setup({})
+lua require('tailbiter/aerial')
 
 lua require('gitsigns').setup()
 
