@@ -28,4 +28,4 @@ require'lspconfig'.fortls.setup{
 	'--enable_code_actions'},
 	root_markers = { ".fortls", ".git" },
 }
-
+require'lspconfig'.yamlls.setup{}
