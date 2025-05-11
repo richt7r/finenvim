@@ -41,6 +41,8 @@ let g:markdown_fenced_languages = [
       \ 'help'
       \]
 
+lua require('tailbiter/telescope')
+
 lua require('tailbiter/aerial')
 
 lua require('gitsigns').setup()

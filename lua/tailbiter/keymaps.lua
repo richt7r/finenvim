@@ -32,6 +32,8 @@ map("n", '<C-e>', '<C-y>')
 
 map("n", '<C-y>', ':tabnew ')
 
+map("n", '<C-b>', ':Telescope buffers<CR>')
+
 map("n", '<C-n>', ':NERDTreeFocus<CR>')
 
 map("n", '<C-k>', ':AerialOpen<CR>')
