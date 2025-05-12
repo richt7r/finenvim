@@ -32,7 +32,7 @@ map("n", '<C-e>', '<C-y>')
 
 map("n", '<C-y>', ':tabnew ')
 
-map("n", '<C-b>', ':Telescope buffers<CR>')
+map("n", '<C-b>', ":lua require('telescope.builtin').buffers({ sort_mru = true })<CR>")
 
 map("n", '<C-n>', ':NERDTreeFocus<CR>')
 
