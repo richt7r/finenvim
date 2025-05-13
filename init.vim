@@ -23,6 +23,7 @@ call plug#begin('~/.config/nvim/autoload')
 	Plug 'stevearc/aerial.nvim'
 	Plug 'voldikss/vim-floaterm'
 	Plug 'szw/vim-maximizer'
+	Plug 'ThePrimeagen/harpoon'
 
 call plug#end()
 
@@ -42,6 +43,7 @@ let g:markdown_fenced_languages = [
       \]
 
 lua require('tailbiter/telescope')
+lua require("telescope").load_extension('harpoon')
 
 lua require('tailbiter/aerial')
 
