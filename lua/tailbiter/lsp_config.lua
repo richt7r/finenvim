@@ -3,6 +3,15 @@ require'lspconfig'.pyright.setup{
     	capabilities = capabilities,
 	filetypes = {"python"},
 	settings = {
+	opts = {
+	    capabilities = {
+	      workspace = {
+		didChangeWatchedFiles = {
+		  dynamicRegistration = true,
+		},
+	      },
+	    },
+	  },
 		python = { 
 			analysis = {
 				autoSearchPaths = true,

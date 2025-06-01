@@ -26,6 +26,10 @@ map("n", '<C-p>', ":lua require('goto-preview').goto_preview_definition()<CR>")
 
 -- back to buffer from which lua require('goto-preview').goto_preview_definition() was called - :q
 
+map("n", "tt", ':Telescope<CR>')
+
+map("n", "td", ':Telescope diagnostics bufnr=0<CR>')
+
 map("n", '<C-c>', '<C-e>')
 
 map("n", '<C-e>', '<C-y>')
