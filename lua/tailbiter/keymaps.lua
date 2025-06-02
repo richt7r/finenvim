@@ -30,6 +30,8 @@ map("n", "tt", ':Telescope<CR>')
 
 map("n", "td", ':Telescope diagnostics bufnr=0<CR>')
 
+map("n", "tg", ':Telescope git_status<CR>')
+
 map("n", '<C-c>', '<C-e>')
 
 map("n", '<C-e>', '<C-y>')
