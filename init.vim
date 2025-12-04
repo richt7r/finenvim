@@ -24,8 +24,11 @@ call plug#begin('~/.config/nvim/autoload')
 	Plug 'voldikss/vim-floaterm'
 	Plug 'szw/vim-maximizer'
 	Plug 'ThePrimeagen/harpoon'
+	Plug 'mason-org/mason.nvim'
 
 call plug#end()
+
+lua require("mason").setup()
 
 colorscheme moonfly
 
